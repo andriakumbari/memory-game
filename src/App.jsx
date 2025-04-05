@@ -4,11 +4,11 @@ import "./index.css";
 
 function Card({ item, onClick, isFlipped }) {
   return (
-    <div
-      className={`card ${isFlipped ? "flipped" : ""}`}
-      onClick={onClick}
-    >
-      {isFlipped ? item : ""}
+    <div className="flippedWrapper" onClick={onClick}>
+      <div className={`flippedCard ${isFlipped ? "active" : ""}`}>
+        <div className="front">{item}</div>
+        <div className="back"></div>
+      </div>
     </div>
   );
 }
@@ -148,7 +148,7 @@ export default function App() {
   return (
     <div className="game-container">
       <div
-        className="card-grid"
+        className="container"
         style={{
           gridTemplateColumns:
             gridSize === "4x4" ? "repeat(4, 1fr)" : "repeat(6, 1fr)",

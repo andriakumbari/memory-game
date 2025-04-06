@@ -29,13 +29,13 @@
   }
   
   
-  .front {
+  .back {
     background-color: #2f3e4d; 
     color: white;
   }
   
   
-  .back {
+  .front {
     background-color: #d1dfea; 
     color: #2f3e4d;
     transform: rotateY(180deg);
@@ -53,6 +53,9 @@
     justify-content: center;
     font-weight: bold;
     font-size: 1.2rem;
+    odeokdeoke
+    deodeokdeko
+    deokok
   }
   
   

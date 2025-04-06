@@ -1,67 +1,179 @@
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 12px;
-  justify-content: center;
-  margin-top: 40px;
-  padding: 20px;
-  background-color: white;
-  border: 6px solid #f2f2f2;
-  border-radius: 16px;
+body{
+  background-color:#304859;
 }
 
-
-.flippedWrapper {
-  width: 60px;
-  height: 60px;
-  perspective: 600px;
+.StartScreenDiv{
+ background-color: #304859;
+ width:654px;
+ height:687px;
+ position:absolute;
+ top:0px;
+ left:300px;
+ border-radius:20px;
 }
-
-
-.flippedCard {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 0.6s;
-  border-radius: 50%;
+.StartScreenTitle{
+  color: #FCFCFC;
+  font-weight:700;
+  font-size:40px;
+  position:absolute;
+  left:250px;
 }
-
-
-.front {
-  background-color: #2f3e4d; 
-  color: white;
+.StartScreenSettings{
+  background-color: #FCFCFC;
+  width:659px;
+  height:559px;
+  position:absolute;
+  top:128px;
+  border-radius:20px;
 }
-
-
-.back {
-  background-color: #d1dfea; 
-  color: #2f3e4d;
-  transform: rotateY(180deg);
+.SelectTheme{
+  position:absolute;
+  top:26px;
+  left:26px;
+  font-weight:700px;
+  font-size:20px;
+  color: #7191A5;
 }
-
-
-.front, .back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  backface-visibility: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 1.2rem;
+.NumbersNP{
+  position:absolute;
+  top:97px;
+  left:56px;
+  background-color:#BCCED9;
+  color:#FCFCFC;
+  height:52px;
+  width:256px;
+  border-radius:26px;
+  align-items:center;
+  justify-content:center;
+  display:flex;
 }
-
-
-.active {
-  transform: rotateY(180deg);
+.IconsNP{
+  position:absolute;
+  top:97px;
+  left:360px;
+  background-color:#BCCED9;
+  color:#FCFCFC;
+  height:52px;
+  width:256px;
+  border-radius:26px;
+  align-items:center;
+  justify-content:center;
+  display:flex;
 }
-
-
-.flippedCard.matched {
-  background-color: #fda214 !important; 
-  color: white;
+.Numbers{
+  position:absolute;
+  top:97px;
+  left:56px;
+  background-color:#304859;
+  color:#FCFCFC;
+  height:52px;
+  width:256px;
+  border-radius:26px;
+  align-items:center;
+  justify-content:center;
+  display:flex;
+}
+.Icons{
+  position:absolute;
+  top:97px;
+  left:360px;
+  background-color:#304859;
+  color:#FCFCFC;
+  height:52px;
+  width:256px;
+  border-radius:26px;
+  align-items:center;
+  justify-content:center;
+  display:flex;
+}
+.GridSelectP{
+  position:absolute;
+  top:180px;
+  left:26px;
+  font-weight:700px;
+  font-size:20px;
+  color: #7191A5;
+}
+.grid6x6{
+  position:absolute;
+  top:280px;
+  left:360px;
+  background-color:#304859;
+  color:#FCFCFC;
+  height:52px;
+  width:256px;
+  border-radius:26px;
+  align-items:center;
+  justify-content:center;
+  display:flex;
+}
+.grid6x6NP{
+  position:absolute;
+  top:280px;
+  left:360px;
+  background-color:#BCCED9;
+  color:#FCFCFC;
+  height:52px;
+  width:256px;
+  border-radius:26px;
+  align-items:center;
+  justify-content:center;
+  display:flex;
+}
+.grid4x4{
+  position:absolute;
+  top:280px;
+  left:56px;
+  background-color:#304859;
+  color:#FCFCFC;
+  height:52px;
+  width:256px;
+  border-radius:26px;
+  align-items:center;
+  justify-content:center;
+  display:flex;
+}
+.grid4x4NP{
+  position:absolute;
+  top:280px;
+  left:56px;
+  background-color:#BCCED9;
+  color:#FCFCFC;
+  height:52px;
+  width:256px;
+  border-radius:26px;
+  align-items:center;
+  justify-content:center;
+  display:flex;
+}
+.StartGame{
+  position:absolute;
+  top:433px;
+  left:56px;
+  width:556px;
+  height:70px;
+  background-color:#FDA214;
+  border-radius:32px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#FCFCFC;
+  font-weight:700;
+  font-size:32px;
+}
+.StartGameNP{
+  position:absolute;
+  top:433px;
+  left:56px;
+  width:556px;
+  height:70px;
+  background-color:#A95000;
+  border-radius:32px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#454545;
+  font-weight:700;
+  font-size:32px;
+  pointer-events:none;
 }

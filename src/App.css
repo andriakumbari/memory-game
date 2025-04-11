@@ -1,8 +1,8 @@
 
 .container {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 12px;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 16px; 
   justify-content: center;
   margin-top: 40px;
   padding: 20px;
@@ -11,13 +11,11 @@
   border-radius: 16px;
 }
 
-
 .flippedWrapper {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   perspective: 600px;
 }
-
 
 .flippedCard {
   position: relative;
@@ -28,21 +26,8 @@
   border-radius: 50%;
 }
 
-
-.front {
-  background-color: #2f3e4d; 
-  color: white;
-}
-
-
+.front,
 .back {
-  background-color: #d1dfea; 
-  color: #2f3e4d;
-  transform: rotateY(180deg);
-}
-
-
-.front, .back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -51,17 +36,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
-  font-size: 1.2rem;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
+.front {
+  background-color: #2f3e4d; 
+  color: white;
+}
+
+.back {
+  background-color: #d1dfea; 
+  color: #2f3e4d;
+  transform: rotateY(180deg);
+}
 
 .active {
   transform: rotateY(180deg);
 }
 
-
-.flippedCard.matched {
-  background-color: #fda214 !important; 
-  color: white;
+/* Highlight matched cards */
+.front.matched,
+.back.matched {
+  background-color: #fda214 !important;
+  color: white !important;
 }
